@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunucu - OWLISBA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="special-page page-server-hub">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-owl">OW</span>
+    <span class="logo-text"><a href="index.html">OWLISBA</a></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="videos.html">Icerik</a></li>
+    <li><a href="games.html">Oyunlar</a></li>
+    <li><a href="server.html" class="active">Sunucu</a></li>
+    <li><a href="about.html">Topluluk</a></li>
+    <li><a href="magaza.html">Magaza</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="nav-socials">
+      <a href="https://kick.com/owlisba" target="_blank" title="Kick"><i class="fa-solid fa-circle-play"></i></a>
+      <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Sag paneli ac" aria-controls="sidePanel" aria-expanded="false">
+      <span class="sidebar-toggle-grid" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="videos.html">Icerik</a>
+  <a href="games.html">Oyunlar</a>
+  <a href="server.html">Sunucu</a>
+  <a href="about.html">Topluluk</a>
+  <a href="magaza.html">Magaza</a>
+</div>
+
+<div class="side-panel-backdrop" id="sidePanelBackdrop"></div>
+<aside class="side-panel" id="sidePanel" aria-hidden="true">
+  <div class="side-panel-inner">
+    <div class="stream-focus-card kick-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">SERVER</span>
+        <span class="stream-focus-chip">ONLINE</span>
+      </div>
+      <h3>play.owlisba.net</h3>
+      <p>Hardcore, etkinlik ve topluluk anlarini ayni dunyada birlestiren ana adres.</p>
+      <a href="about.html" class="stream-focus-link">Topluluga Gec</a>
+    </div>
+
+    <div class="stream-focus-card minecraft-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">DROP</span>
+        <span class="stream-focus-chip">STORE</span>
+      </div>
+      <h3>Destek paketleri</h3>
+      <p>Sunucu icin ozel destek urunleri ve creator paketleri magaza sayfasinda yer alir.</p>
+      <div class="stream-focus-meta">
+        <span>VIP paketler</span>
+        <span>Dijital urunler</span>
+      </div>
+    </div>
+
+    <nav class="side-panel-nav">
+      <a href="index.html"><span>01</span>Ana Sayfa</a>
+      <a href="videos.html"><span>02</span>Icerik</a>
+      <a href="games.html"><span>03</span>Oyunlar</a>
+      <a href="server.html"><span>04</span>Sunucu</a>
+      <a href="about.html"><span>05</span>Topluluk</a>
+      <a href="magaza.html"><span>06</span>Magaza</a>
+    </nav>
+
+    <div class="auth-panel">
+      <span class="side-panel-kicker">GIRIS ALANI</span>
+      <div class="auth-actions">
+        <a href="login.html" class="auth-btn auth-btn-primary">Login</a>
+        <a href="register.html" class="auth-btn auth-btn-secondary">Kayit</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<main class="special-shell">
+  <section class="special-hero reveal">
+    <div class="special-hero-copy">
+      <span class="section-tag">SUNUCU KOMUTA MERKEZI</span>
+      <h1>Hardcore dunya ve topluluk <span class="accent-page">tek cati altinda</span>.</h1>
+      <p>
+        Bu ekran sunucu bilgisini, etkinlik ritmini, kurallari ve oyuncu deneyimini tek yerde toplamak icin ozel tasarlandi.
+        Sadece IP gosteren bir sayfa degil; gercek bir topluluk operasyon merkezi gibi calisir.
+      </p>
+      <div class="special-chip-row">
+        <span class="special-chip"><i class="fa-solid fa-server"></i> 1.21.x</span>
+        <span class="special-chip"><i class="fa-solid fa-users"></i> 47/100 oyuncu</span>
+        <span class="special-chip"><i class="fa-solid fa-shield-halved"></i> Hardcore aktif</span>
+      </div>
+      <div class="special-actions">
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" class="btn btn-primary">Discord ile Baglan</a>
+        <a href="magaza.html" class="btn btn-secondary">Destek Paketleri</a>
+        <a href="videos.html" class="btn btn-outline">Sunucu Icerikleri</a>
+      </div>
+    </div>
+
+    <aside class="special-panel reveal">
+      <span class="special-kicker">BAGLANTI</span>
+      <h3>play.owlisba.net</h3>
+      <p>Surum, oyuncu sayisi, etkinlik zamani ve topluluk notlari login sonrasi daha da detaylandirilabilir.</p>
+      <div class="special-metric-grid">
+        <div class="special-metric">
+          <strong>97%</strong>
+          <span>Ornek uptime ve stabil baglanti durumu.</span>
+        </div>
+        <div class="special-metric">
+          <strong>02:15</strong>
+          <span>Planli yedekleme zamani.</span>
+        </div>
+        <div class="special-metric">
+          <strong>7</strong>
+          <span>Haftalik etkinlik veya mini challenge slotu.</span>
+        </div>
+        <div class="special-metric">
+          <strong>VIP</strong>
+          <span>Magaza ile baglanabilecek destek seviyesi.</span>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="special-grid-two">
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">KURALLAR</span>
+          <h2>Sunucunun omurgasi</h2>
+        </div>
+      </div>
+
+      <ul class="special-list">
+        <li><i class="fa-solid fa-check"></i><span>Hardcore mantigi geregi tek olum oyunun tonunu degistirir; risk gercek hissedilir.</span></li>
+        <li><i class="fa-solid fa-check"></i><span>Adil oyun ana kuraldir; hile, exploit ve toxic davranis aninda moderasyona duser.</span></li>
+        <li><i class="fa-solid fa-check"></i><span>Topluluk etkinliklerinde rekabet kadar eglence de korunur; odak hikaye ve an yaratmaktir.</span></li>
+        <li><i class="fa-solid fa-check"></i><span>Discord entegrasyonu ile duyuru, rol ve destek akisi hizli tutulur.</span></li>
+      </ul>
+    </div>
+
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">SUNUCU OZELLIKLERI</span>
+          <h2>Neden farkli hissettiriyor</h2>
+        </div>
+      </div>
+
+      <div class="special-grid-two">
+        <article class="special-card">
+          <h3>Story-first dunya</h3>
+          <p>Sunucu sadece survival degil; icerik ve toplulukla birlikte yasayan bir hikaye motoru gibi kuruldu.</p>
+        </article>
+        <article class="special-card">
+          <h3>Etkinlik odakli ritim</h3>
+          <p>Haftalik etkinlikler, mini boss geceleri ve challenge gunleri tekrar katilimi artirir.</p>
+        </article>
+        <article class="special-card">
+          <h3>Creator destekli</h3>
+          <p>Yayinda yasanan anlar ertesi gun icerige donustugu icin server bir medya merkezi gibi de calisir.</p>
+        </article>
+        <article class="special-card">
+          <h3>Buyumeye hazir</h3>
+          <p>Login, ticket, rank ve odeme modulleri sonradan kolayca bu ekrana eklenebilir.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">HAFTALIK ETKINLIK AKISI</span>
+        <h2>Toplulugun bekledigi saatler</h2>
+      </div>
+      <span class="special-note">Live + server sync</span>
+    </div>
+
+    <div class="agenda-list">
+      <div class="agenda-item">
+        <div class="agenda-time">Pzt</div>
+        <div class="agenda-main">
+          <strong>Harita temizligi ve reset kontrolu</strong>
+          <p>Haftanin basinda ekonomi, yapi ve alan denetimi yapilir.</p>
+        </div>
+        <span class="agenda-chip">Ops</span>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-time">Cars</div>
+        <div class="agenda-main">
+          <strong>Mini challenge gecesi</strong>
+          <p>Discord ile secilen kural setiyle kisa ama sert challenge oynanir.</p>
+        </div>
+        <span class="agenda-chip">Event</span>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-time">Cuma</div>
+        <div class="agenda-main">
+          <strong>Canli yayinli sunucu oturumu</strong>
+          <p>Owlisba yayin sirasinda toplulukla ayni dunyada ilerler ve highlight toplar.</p>
+        </div>
+        <span class="agenda-chip">Live</span>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-time">Pzr</div>
+        <div class="agenda-main">
+          <strong>Season note ve leaderboard ozeti</strong>
+          <p>Haftalik oyuncu performansi ve sonraki hedefler paylasilir.</p>
+        </div>
+        <span class="agenda-chip">Recap</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">KATILIM YOLLARI</span>
+        <h2>Oyuncu nasil derinlesir</h2>
+      </div>
+      <span class="special-note">Server ladder</span>
+    </div>
+
+    <div class="lane-grid">
+      <div class="lane-column">
+        <div class="lane-head">
+          <span>Yeni gelen</span>
+          <strong>Starter</strong>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Ilk adim</span>
+          <h3>Discord ile giris</h3>
+          <p>Kurallari oku, rol sec ve toplulukla ilk temasini kur.</p>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Hazirlik</span>
+          <h3>Sunucu setup</h3>
+          <p>Version, IP ve baslangic bilgilendirmesi ayni yerde sunulur.</p>
+        </div>
+      </div>
+
+      <div class="lane-column">
+        <div class="lane-head">
+          <span>Duzenli oyuncu</span>
+          <strong>Core</strong>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Etkinlik</span>
+          <h3>Challenge ve sezonlar</h3>
+          <p>Haftalik etkinliklere dahil olarak isim ve hikaye biriktirir.</p>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Icerik</span>
+          <h3>Yayinda yer alma</h3>
+          <p>Sunucuda dogan anlar video ve canli yayinlarda yer bulur.</p>
+        </div>
+      </div>
+
+      <div class="lane-column">
+        <div class="lane-head">
+          <span>Destekleyen</span>
+          <strong>VIP</strong>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Magaza</span>
+          <h3>Destek paketi</h3>
+          <p>Magaza uzerinden destek verip ozel roller veya kozmetik alanlar acabilir.</p>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Community</span>
+          <h3>Ozel odalar</h3>
+          <p>Daha yakin topluluk alanlari ve erken duyurulara erisim saglanabilir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-owl">OW</span>
+      <span class="logo-text">OWLISBA</span>
+      <p>Hardcore dunya, etkinlik takvimi ve server operasyonlari</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="videos.html">Icerik</a>
+        <a href="games.html">Oyunlar</a>
+        <a href="server.html">Sunucu</a>
+        <a href="about.html">Topluluk</a>
+        <a href="magaza.html">Magaza</a>
+      </div>
+      <div class="footer-col">
+        <h4>Topluluk</h4>
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank">Discord</a>
+        <a href="videos.html">Sunucu Icerikleri</a>
+        <a href="about.html">Topluluk Merkezi</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hesap</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Kayit</a>
+        <a href="dashboard.html">Panel</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Owlisba. Tum haklari saklidir.</p>
+    <p>Sunucu deneyimi ve topluluk katilimi icin ozel hazirlandi.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
