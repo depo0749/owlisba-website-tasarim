@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Icerik - OWLISBA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="special-page page-content-hub">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-owl">OW</span>
+    <span class="logo-text"><a href="index.html">OWLISBA</a></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="videos.html" class="active">Icerik</a></li>
+    <li><a href="games.html">Oyunlar</a></li>
+    <li><a href="server.html">Sunucu</a></li>
+    <li><a href="about.html">Topluluk</a></li>
+    <li><a href="magaza.html">Magaza</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="nav-socials">
+      <a href="https://kick.com/owlisba" target="_blank" title="Kick"><i class="fa-solid fa-circle-play"></i></a>
+      <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://tiktok.com/@owlisba" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Sag paneli ac" aria-controls="sidePanel" aria-expanded="false">
+      <span class="sidebar-toggle-grid" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="videos.html">Icerik</a>
+  <a href="games.html">Oyunlar</a>
+  <a href="server.html">Sunucu</a>
+  <a href="about.html">Topluluk</a>
+  <a href="magaza.html">Magaza</a>
+</div>
+
+<div class="side-panel-backdrop" id="sidePanelBackdrop"></div>
+<aside class="side-panel" id="sidePanel" aria-hidden="true">
+  <div class="side-panel-inner">
+    <div class="stream-focus-card kick-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">LIVE</span>
+        <span class="stream-focus-chip">KICK</span>
+      </div>
+      <h3>Icerik Akisi</h3>
+      <p>Canli yayinlar, klipler ve yeni video cikislari ayni takvimden yonetiliyor.</p>
+      <a href="https://kick.com/owlisba" target="_blank" class="stream-focus-link">Canliya Git</a>
+    </div>
+
+    <div class="stream-focus-card minecraft-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">DROP</span>
+        <span class="stream-focus-chip">MAGAZA</span>
+      </div>
+      <h3>Yeni urunler</h3>
+      <p>Yeni drop ve creator paketleri icin magaza sayfasini ac.</p>
+      <div class="stream-focus-meta">
+        <span>3 yeni urun</span>
+        <span>Sinirli stok</span>
+      </div>
+    </div>
+
+    <nav class="side-panel-nav">
+      <a href="index.html"><span>01</span>Ana Sayfa</a>
+      <a href="videos.html"><span>02</span>Icerik</a>
+      <a href="games.html"><span>03</span>Oyunlar</a>
+      <a href="server.html"><span>04</span>Sunucu</a>
+      <a href="about.html"><span>05</span>Topluluk</a>
+      <a href="magaza.html"><span>06</span>Magaza</a>
+    </nav>
+
+    <div class="auth-panel">
+      <span class="side-panel-kicker">GIRIS ALANI</span>
+      <div class="auth-actions">
+        <a href="login.html" class="auth-btn auth-btn-primary">Login</a>
+        <a href="register.html" class="auth-btn auth-btn-secondary">Kayit</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<main class="special-shell">
+  <section class="special-hero reveal">
+    <div class="special-hero-copy">
+      <span class="section-tag">ICERIK MERKEZI</span>
+      <h1>Yayin, klip ve seri <span class="accent-page">tek merkezde</span>.</h1>
+      <p>
+        Bu sayfa sadece video listesi degil. Owlisba icerik sisteminin omurgasi gibi calisir: hangi formatta ne cikacak,
+        hangi seri buyuyor, hangi platform ne zaman beslenecek hepsi burada toplanir.
+      </p>
+      <div class="special-chip-row">
+        <span class="special-chip"><i class="fa-brands fa-youtube"></i> Long form</span>
+        <span class="special-chip"><i class="fa-brands fa-tiktok"></i> Shorts</span>
+        <span class="special-chip"><i class="fa-solid fa-circle-play"></i> Live clips</span>
+      </div>
+      <div class="special-actions">
+        <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" class="btn btn-primary">YouTube Kanal</a>
+        <a href="dashboard.html" class="btn btn-secondary">Paneli Ac</a>
+        <a href="about.html" class="btn btn-outline">Topluluk Geri Bildirimi</a>
+      </div>
+    </div>
+
+    <aside class="special-panel reveal">
+      <span class="special-kicker">BU HAFTA</span>
+      <h3>Icerik Nabzi</h3>
+      <p>Haftalik icerik ritmi long form, shorts ve canli yayindan besleniyor. Hedef: tek bir videodan cok platformlu dagitim.</p>
+      <div class="special-metric-grid">
+        <div class="special-metric">
+          <strong>12</strong>
+          <span>Taslak video ve shorts hazir sirada.</span>
+        </div>
+        <div class="special-metric">
+          <strong>4</strong>
+          <span>Bu hafta cikisa hazir seri parcasi.</span>
+        </div>
+        <div class="special-metric">
+          <strong>3.4s</strong>
+          <span>Canli yayin suresi dogrudan klip havuzuna akiyor.</span>
+        </div>
+        <div class="special-metric">
+          <strong>42K</strong>
+          <span>Yeni icerik ivmesinden gelen ornek erisim.</span>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">FORMAT HATLARI</span>
+        <h2>Icerik tipi bazli ozel alanlar</h2>
+      </div>
+      <span class="special-note">Buyutulebilir yapi</span>
+    </div>
+
+    <div class="special-grid-three">
+      <article class="special-card">
+        <div class="special-card-icon"><i class="fa-solid fa-film"></i></div>
+        <h3>YouTube ana videolari</h3>
+        <p>Uzun format hikaye, seri finali, sezon acilisi ve ozel challenge videolari icin kullanilan ana vitrin alani.</p>
+        <ul class="special-list">
+          <li><i class="fa-solid fa-check"></i><span>Minecraft 100 gun ve FiveM kaos serileri icin ideal.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Kapak, baslik ve acilis hook notlari ayni kutuda toplanabilir.</span></li>
+        </ul>
+      </article>
+
+      <article class="special-card">
+        <div class="special-card-icon"><i class="fa-brands fa-tiktok"></i></div>
+        <h3>Shorts ve dikey klipler</h3>
+        <p>Anlik reaksiyon, tek sahnelik komedi ve canli yayindan ayiklanan vurucu anlar icin hizli cikis rotasi.</p>
+        <ul class="special-list">
+          <li><i class="fa-solid fa-check"></i><span>Gunluk dagitim icin ayrica etiket ve platform notu tutabilir.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Ayni klibin TikTok, Shorts ve Reels versiyonu buradan yonetilir.</span></li>
+        </ul>
+      </article>
+
+      <article class="special-card">
+        <div class="special-card-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+        <h3>Canli yayin highlightlari</h3>
+        <p>Kick yayinlarindan otomatik cikarilacak highlight, VOD bolumleme ve sonraki gunun teaser planlari icin ayrildi.</p>
+        <ul class="special-list">
+          <li><i class="fa-solid fa-check"></i><span>En iyi momentler ertesi gune icerik yakiti olarak tasinabilir.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Discord duyuru ve topluluk postu akisi ile eslesir.</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">URETIM AKISI</span>
+        <h2>Icerigin mutfakta nasil ilerledigi</h2>
+      </div>
+      <span class="special-note">Demo editorial board</span>
+    </div>
+
+    <div class="lane-grid">
+      <div class="lane-column">
+        <div class="lane-head">
+          <span>Hazirlaniyor</span>
+          <strong>04</strong>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Long form</span>
+          <h3>Hardcore sezon finali</h3>
+          <p>Hook metni, thumbnail ve final cliffhanger notlari hazirlaniyor.</p>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Shorts</span>
+          <h3>FiveM mahkeme sahnesi</h3>
+          <p>Ilk 2 saniyede reaksiyon almak icin daha sert acilis kesilecek.</p>
+        </div>
+      </div>
+
+      <div class="lane-column">
+        <div class="lane-head">
+          <span>Montaj</span>
+          <strong>03</strong>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Canli klip</span>
+          <h3>Kick rage moment paketi</h3>
+          <p>Altyazi, zoom ve reaksiyon stickerlari tamamlanmak uzere.</p>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Series</span>
+          <h3>CS2 clutch derleme</h3>
+          <p>Ses temizligi ile final ekranlari ayni anda girilecek.</p>
+        </div>
+      </div>
+
+      <div class="lane-column">
+        <div class="lane-head">
+          <span>Yayina hazir</span>
+          <strong>05</strong>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Bu aksam</span>
+          <h3>Discord duyurulu yayin teaser</h3>
+          <p>YouTube topluluk postu ile beraber yayina alinacak ilk paket.</p>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Yarin</span>
+          <h3>Minecraft kesit maratonu</h3>
+          <p>Uc farkli formatta dagitilmak uzere etiket ve aciklama hazir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="special-grid-two">
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">HAFTALIK PLAN</span>
+          <h2>Yayin takvimi</h2>
+        </div>
+      </div>
+
+      <div class="agenda-list">
+        <div class="agenda-item">
+          <div class="agenda-time">14:00</div>
+          <div class="agenda-main">
+            <strong>Kapak testi</strong>
+            <p>Ayni videonun iki farkli thumbnail versiyonu toplulukla oylanir.</p>
+          </div>
+          <span class="agenda-chip">A/B Test</span>
+        </div>
+        <div class="agenda-item">
+          <div class="agenda-time">18:30</div>
+          <div class="agenda-main">
+            <strong>Discord teaser</strong>
+            <p>Yeni yayin icin kisa klip ve ping duyurusu paylasilir.</p>
+          </div>
+          <span class="agenda-chip">Topluluk</span>
+        </div>
+        <div class="agenda-item">
+          <div class="agenda-time">20:30</div>
+          <div class="agenda-main">
+            <strong>Canli yayin</strong>
+            <p>Kick uzerinden yeni serinin canli bolumu acilir, highlight isaretlenir.</p>
+          </div>
+          <span class="agenda-chip">Live</span>
+        </div>
+        <div class="agenda-item">
+          <div class="agenda-time">23:15</div>
+          <div class="agenda-main">
+            <strong>Klip ayiklama</strong>
+            <p>Yayindan ertesi gun cikacak dikey kesitler secilir.</p>
+          </div>
+          <span class="agenda-chip">Klip</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">SPOTLIGHT</span>
+          <h2>Buyuyen seriler</h2>
+        </div>
+      </div>
+
+      <div class="special-grid-two">
+        <article class="special-card">
+          <h3>Hardcore 100 gun evreni</h3>
+          <p>Uzun formatta hikaye, shortsta fails, canli yayinda kaos. En cok genisleyen seri alani.</p>
+        </article>
+        <article class="special-card">
+          <h3>FiveM sosyal deneyler</h3>
+          <p>Tek sahnelik yumruk etkili klipler ve tekrar izleme degeri yuksek kisa videolar.</p>
+        </article>
+        <article class="special-card">
+          <h3>CS2 clutch paketleri</h3>
+          <p>Derleme ve dakikalik highlight kombinasyonu ile iki farkli kitleyi besliyor.</p>
+        </article>
+        <article class="special-card">
+          <h3>Topluluk challenge videolari</h3>
+          <p>Discord oylamasi ile secilen konseptler en yuksek yorum oranini getiriyor.</p>
+        </article>
+      </div>
+
+      <div class="special-quote" style="margin-top:1rem;">
+        <p>"Bu sayfa sonradan sponsorlu icerik takibi, marka is birlikleri ve otomatik yayin takvimi modulleriyle daha da buyutulebilir."</p>
+        <span>Creator workflow note</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-owl">OW</span>
+      <span class="logo-text">OWLISBA</span>
+      <p>Icerik merkezi, yayin akisi ve seri duzeni</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="videos.html">Icerik</a>
+        <a href="games.html">Oyunlar</a>
+        <a href="server.html">Sunucu</a>
+        <a href="about.html">Topluluk</a>
+        <a href="magaza.html">Magaza</a>
+      </div>
+      <div class="footer-col">
+        <h4>Platformlar</h4>
+        <a href="https://kick.com/owlisba" target="_blank">Kick</a>
+        <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank">YouTube</a>
+        <a href="https://tiktok.com/@owlisba" target="_blank">TikTok</a>
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank">Discord</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hesap</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Kayit</a>
+        <a href="dashboard.html">Panel</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Owlisba. Tum haklari saklidir.</p>
+    <p>Icerik cikislarini tek yerden yonetmek icin hazirlandi.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
