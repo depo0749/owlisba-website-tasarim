@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Topluluk - OWLISBA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="special-page page-community-hub">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-owl">OW</span>
+    <span class="logo-text"><a href="index.html">OWLISBA</a></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="videos.html">Icerik</a></li>
+    <li><a href="games.html">Oyunlar</a></li>
+    <li><a href="server.html">Sunucu</a></li>
+    <li><a href="about.html" class="active">Topluluk</a></li>
+    <li><a href="magaza.html">Magaza</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="nav-socials">
+      <a href="https://kick.com/owlisba" target="_blank" title="Kick"><i class="fa-solid fa-circle-play"></i></a>
+      <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://instagram.com/owlisba" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Sag paneli ac" aria-controls="sidePanel" aria-expanded="false">
+      <span class="sidebar-toggle-grid" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="videos.html">Icerik</a>
+  <a href="games.html">Oyunlar</a>
+  <a href="server.html">Sunucu</a>
+  <a href="about.html">Topluluk</a>
+  <a href="magaza.html">Magaza</a>
+</div>
+
+<div class="side-panel-backdrop" id="sidePanelBackdrop"></div>
+<aside class="side-panel" id="sidePanel" aria-hidden="true">
+  <div class="side-panel-inner">
+    <div class="stream-focus-card kick-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">DISCORD</span>
+        <span class="stream-focus-chip">ONLINE</span>
+      </div>
+      <h3>Topluluk merkezi</h3>
+      <p>Duyurular, challenge oylari, destek ve etkinlikler ayni topluluk akisinda bulusuyor.</p>
+      <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" class="stream-focus-link">Discord'a Git</a>
+    </div>
+
+    <div class="stream-focus-card minecraft-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">SHOP</span>
+        <span class="stream-focus-chip">DROP</span>
+      </div>
+      <h3>Topluluk urunleri</h3>
+      <p>Magaza sayfasinda creator urunleri, destek paketleri ve sezonluk drop alanlari yer aliyor.</p>
+      <div class="stream-focus-meta">
+        <span>Ozel roller</span>
+        <span>Destek paketleri</span>
+      </div>
+    </div>
+
+    <nav class="side-panel-nav">
+      <a href="index.html"><span>01</span>Ana Sayfa</a>
+      <a href="videos.html"><span>02</span>Icerik</a>
+      <a href="games.html"><span>03</span>Oyunlar</a>
+      <a href="server.html"><span>04</span>Sunucu</a>
+      <a href="about.html"><span>05</span>Topluluk</a>
+      <a href="magaza.html"><span>06</span>Magaza</a>
+    </nav>
+
+    <div class="auth-panel">
+      <span class="side-panel-kicker">GIRIS ALANI</span>
+      <div class="auth-actions">
+        <a href="login.html" class="auth-btn auth-btn-primary">Login</a>
+        <a href="register.html" class="auth-btn auth-btn-secondary">Kayit</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<main class="special-shell">
+  <section class="special-hero reveal">
+    <div class="special-hero-copy">
+      <span class="section-tag">TOPLULUK MERKEZI</span>
+      <h1>Yayini izleyen degil, birlikte <span class="accent-page">evren kuran</span> topluluk.</h1>
+      <p>
+        Bu sayfa takipci listesi mantiginda degil; OWLISBA toplulugunun nerede toplandigini, neyi paylastigini, nasil
+        etkinlik urettigini ve nasil daha derin katilim sagladigini gostermek icin ozel hazirlandi.
+      </p>
+      <div class="special-chip-row">
+        <span class="special-chip"><i class="fa-brands fa-discord"></i> Discord odalari</span>
+        <span class="special-chip"><i class="fa-solid fa-calendar-days"></i> Etkinlik takvimi</span>
+        <span class="special-chip"><i class="fa-solid fa-users"></i> Roller ve ekipler</span>
+      </div>
+      <div class="special-actions">
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" class="btn btn-primary">Topluluga Katil</a>
+        <a href="videos.html" class="btn btn-secondary">Iceriklerle Bag Kur</a>
+        <a href="magaza.html" class="btn btn-outline">Magaza Drop</a>
+      </div>
+    </div>
+
+    <aside class="special-panel reveal">
+      <span class="special-kicker">CANLI TOPLULUK</span>
+      <h3>Birlikte buyuyen sistem</h3>
+      <p>Topluluk sadece izleyici degil; challenge secimi, etkinlik akisi, sunucu katilimi ve yeni urun fikirlerinde dogrudan rol alir.</p>
+      <div class="special-metric-grid">
+        <div class="special-metric">
+          <strong>3500+</strong>
+          <span>Discord ve canli topluluk baglantisi.</span>
+        </div>
+        <div class="special-metric">
+          <strong>8</strong>
+          <span>Aktif oda veya ilgi alani.</span>
+        </div>
+        <div class="special-metric">
+          <strong>4</strong>
+          <span>Etkin topluluk rolu ve mini ekipler.</span>
+        </div>
+        <div class="special-metric">
+          <strong>24/7</strong>
+          <span>Duyuru, destek ve sohbet akisi devam eder.</span>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">TOPLULUK ALANLARI</span>
+        <h2>Nerede ne oluyor</h2>
+      </div>
+      <span class="special-note">Room-based structure</span>
+    </div>
+
+    <div class="special-grid-three">
+      <article class="special-card">
+        <div class="special-card-icon"><i class="fa-brands fa-discord"></i></div>
+        <h3>Duyuru odasi</h3>
+        <p>Yeni yayin, yeni video, sunucu reseti ve magaza drop bilgileri en hizli burada toplanir.</p>
+      </article>
+      <article class="special-card">
+        <div class="special-card-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+        <h3>Canli yayin sohbeti</h3>
+        <p>Kick yayinlari sirasinda kliplik anlar, challenge fikirleri ve anlik reaksiyonlar bu hatta akar.</p>
+      </article>
+      <article class="special-card">
+        <div class="special-card-icon"><i class="fa-solid fa-gamepad"></i></div>
+        <h3>Sunucu ve oyun odalari</h3>
+        <p>Minecraft, FiveM ve diger oyunlara gore ayrilan alanlar daha temiz topluluk deneyimi saglar.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="special-grid-two">
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">ROLLER</span>
+          <h2>Kim neyi tasir</h2>
+        </div>
+      </div>
+
+      <div class="lane-grid" style="grid-template-columns:1fr;">
+        <div class="lane-column">
+          <div class="lane-head">
+            <span>Topluluk ekipleri</span>
+            <strong>04</strong>
+          </div>
+          <div class="lane-card">
+            <span class="lane-tag">Core</span>
+            <h3>Moderator ve duzen ekibi</h3>
+            <p>Sohbet, etkinlik ve sunucu kurallarinin akici kalmasini saglar.</p>
+          </div>
+          <div class="lane-card">
+            <span class="lane-tag">Creative</span>
+            <h3>Clip ve fikir ekibi</h3>
+            <p>Yayindan cikan iyi anlari ve yeni seri fikirlerini one tasir.</p>
+          </div>
+          <div class="lane-card">
+            <span class="lane-tag">VIP</span>
+            <h3>Destekleyen uye katmani</h3>
+            <p>Erken duyurular, ozel odalar veya mini avantajlarla desteklenebilir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">ETKINLIKLER</span>
+          <h2>Aylik topluluk ritmi</h2>
+        </div>
+      </div>
+
+      <div class="agenda-list">
+        <div class="agenda-item">
+          <div class="agenda-time">01</div>
+          <div class="agenda-main">
+            <strong>Challenge secimi</strong>
+            <p>Ay boyunca oynanacak ozel challenge topluluk oylamasi ile belirlenir.</p>
+          </div>
+          <span class="agenda-chip">Vote</span>
+        </div>
+        <div class="agenda-item">
+          <div class="agenda-time">08</div>
+          <div class="agenda-main">
+            <strong>Topluluk oynama gecesi</strong>
+            <p>Sunucu veya farkli oyunlarda birlikte oynama oturumu acilir.</p>
+          </div>
+          <span class="agenda-chip">Play</span>
+        </div>
+        <div class="agenda-item">
+          <div class="agenda-time">16</div>
+          <div class="agenda-main">
+            <strong>Icerik geri bildirim turu</strong>
+            <p>Thumbnail, video konusu ve yeni seri fikirleri toplulukla birlikte test edilir.</p>
+          </div>
+          <span class="agenda-chip">Feedback</span>
+        </div>
+        <div class="agenda-item">
+          <div class="agenda-time">25</div>
+          <div class="agenda-main">
+            <strong>Drop ve duyuru gunu</strong>
+            <p>Magaza, yeni video ve sezon update duyurulari ayni gunde toplanir.</p>
+          </div>
+          <span class="agenda-chip">Launch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">TOPLULUK SESI</span>
+        <h2>Neden burada kaliyorlar</h2>
+      </div>
+    </div>
+
+    <div class="special-grid-three">
+      <div class="special-quote">
+        <p>"Burasi sadece yayin linki atilan yer degil. Oyun, sohbet ve ic kalite ayni anda hissediliyor."</p>
+        <span>Discord uyesi</span>
+      </div>
+      <div class="special-quote">
+        <p>"Challenge secimlerinde fikrimizin alinmasi bizi izleyici degil parcasi yapiyor."</p>
+        <span>Topluluk cekirdek ekip</span>
+      </div>
+      <div class="special-quote">
+        <p>"Sunucu, icerik ve magaza ayni dilde oldugu icin her sey bir butun gibi duruyor."</p>
+        <span>Destekleyen uye</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-owl">OW</span>
+      <span class="logo-text">OWLISBA</span>
+      <p>Discord, etkinlikler ve topluluk katilim merkezi</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="videos.html">Icerik</a>
+        <a href="games.html">Oyunlar</a>
+        <a href="server.html">Sunucu</a>
+        <a href="about.html">Topluluk</a>
+        <a href="magaza.html">Magaza</a>
+      </div>
+      <div class="footer-col">
+        <h4>Baglanti</h4>
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank">Discord</a>
+        <a href="https://instagram.com/owlisba" target="_blank">Instagram</a>
+        <a href="https://kick.com/owlisba" target="_blank">Kick</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hesap</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Kayit</a>
+        <a href="dashboard.html">Panel</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Owlisba. Tum haklari saklidir.</p>
+    <p>Toplulugun merkezi baglantilari ve etkinlikleri icin hazirlandi.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
