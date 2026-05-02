@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oyunlar - OWLISBA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="special-page page-games-hub">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-owl">OW</span>
+    <span class="logo-text"><a href="index.html">OWLISBA</a></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="videos.html">Icerik</a></li>
+    <li><a href="games.html" class="active">Oyunlar</a></li>
+    <li><a href="server.html">Sunucu</a></li>
+    <li><a href="about.html">Topluluk</a></li>
+    <li><a href="magaza.html">Magaza</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="nav-socials">
+      <a href="https://kick.com/owlisba" target="_blank" title="Kick"><i class="fa-solid fa-circle-play"></i></a>
+      <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://tiktok.com/@owlisba" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Sag paneli ac" aria-controls="sidePanel" aria-expanded="false">
+      <span class="sidebar-toggle-grid" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="videos.html">Icerik</a>
+  <a href="games.html">Oyunlar</a>
+  <a href="server.html">Sunucu</a>
+  <a href="about.html">Topluluk</a>
+  <a href="magaza.html">Magaza</a>
+</div>
+
+<div class="side-panel-backdrop" id="sidePanelBackdrop"></div>
+<aside class="side-panel" id="sidePanel" aria-hidden="true">
+  <div class="side-panel-inner">
+    <div class="stream-focus-card kick-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">PLAYLIST</span>
+        <span class="stream-focus-chip">ACTIVE</span>
+      </div>
+      <h3>Oyun Rotasyonu</h3>
+      <p>Minecraft, FiveM ve CS2 ayni haftada farkli formatlarla yayin takvimine giriyor.</p>
+      <a href="videos.html" class="stream-focus-link">Icerigi Ac</a>
+    </div>
+
+    <div class="stream-focus-card minecraft-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">COMMUNITY</span>
+        <span class="stream-focus-chip">ONLINE</span>
+      </div>
+      <h3>Challenge oylamasi</h3>
+      <p>Bir sonraki challenge oyununu topluluk secsin diye oylama hazir.</p>
+      <div class="stream-focus-meta">
+        <span>3 aktif oyun</span>
+        <span>1 yeni slot</span>
+      </div>
+    </div>
+
+    <nav class="side-panel-nav">
+      <a href="index.html"><span>01</span>Ana Sayfa</a>
+      <a href="videos.html"><span>02</span>Icerik</a>
+      <a href="games.html"><span>03</span>Oyunlar</a>
+      <a href="server.html"><span>04</span>Sunucu</a>
+      <a href="about.html"><span>05</span>Topluluk</a>
+      <a href="magaza.html"><span>06</span>Magaza</a>
+    </nav>
+
+    <div class="auth-panel">
+      <span class="side-panel-kicker">GIRIS ALANI</span>
+      <div class="auth-actions">
+        <a href="login.html" class="auth-btn auth-btn-primary">Login</a>
+        <a href="register.html" class="auth-btn auth-btn-secondary">Kayit</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<main class="special-shell">
+  <section class="special-hero reveal">
+    <div class="special-hero-copy">
+      <span class="section-tag">OYUN EVRENI</span>
+      <h1>Her oyun icin ayri bir <span class="accent-page">karakter ve ritim</span>.</h1>
+      <p>
+        Owlisba dunyasinda oyunlar sadece kategori degil; her biri farkli mizah, farkli seri dili ve farkli topluluk beklentisi
+        tasiyor. Bu sayfa o oyun evrenlerini tek bakista gosterecek sekilde ozel kuruldu.
+      </p>
+      <div class="special-chip-row">
+        <span class="special-chip"><i class="fa-solid fa-cube"></i> Minecraft</span>
+        <span class="special-chip"><i class="fa-solid fa-car"></i> FiveM</span>
+        <span class="special-chip"><i class="fa-solid fa-crosshairs"></i> CS2</span>
+      </div>
+      <div class="special-actions">
+        <a href="videos.html" class="btn btn-primary">Icerik Havuzu</a>
+        <a href="about.html" class="btn btn-secondary">Challenge Oylamasi</a>
+        <a href="dashboard.html" class="btn btn-outline">Panel</a>
+      </div>
+    </div>
+
+    <aside class="special-panel reveal">
+      <span class="special-kicker">ROTASYON</span>
+      <h3>Bu sezon aktif oyunlar</h3>
+      <p>Her oyun farkli bir formatta one cikiyor. Minecraft hikaye, FiveM kaos, CS2 ise refleks ve clutch uzerinden ilerliyor.</p>
+      <div class="special-metric-grid">
+        <div class="special-metric">
+          <strong>03</strong>
+          <span>Ana oyun omurgasi bu sezon aktif.</span>
+        </div>
+        <div class="special-metric">
+          <strong>09</strong>
+          <span>Topluluk destekli challenge hazir bekliyor.</span>
+        </div>
+        <div class="special-metric">
+          <strong>2.1M</strong>
+          <span>Minecraft evreninden gelen toplam ornek izlenme.</span>
+        </div>
+        <div class="special-metric">
+          <strong>500+</strong>
+          <span>Canli yayin challenge anketine gelen oy.</span>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">ANA EVRENLER</span>
+        <h2>Oyun bazli ozel alanlar</h2>
+      </div>
+      <span class="special-note">Her biri ayri ton</span>
+    </div>
+
+    <div class="special-grid-three">
+      <article class="special-card">
+        <div class="special-card-icon"><i class="fa-solid fa-cube"></i></div>
+        <h3>Minecraft</h3>
+        <p>Hardcore 100 gun, topluluk yapilari ve buyuk hikaye akisi. En guclu world-building bu tarafta donuyor.</p>
+        <ul class="special-list">
+          <li><i class="fa-solid fa-check"></i><span>Uzun format anlatim ve sezon mantigi icin en uygun alan.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Topluluk sunucusu ile dogrudan bag kuruyor.</span></li>
+        </ul>
+      </article>
+
+      <article class="special-card">
+        <div class="special-card-icon"><i class="fa-solid fa-car-burst"></i></div>
+        <h3>FiveM</h3>
+        <p>Sosyal deneyler, absurt rol sahneleri ve beklenmedik olay zinciri ile kisa formatta en hizli tepkiyi veren alan.</p>
+        <ul class="special-list">
+          <li><i class="fa-solid fa-check"></i><span>Shorts ve TikTok tarafinda yuksek tekrar izlenme getirir.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Canli yayinda hikaye aniden yon degistirebilir.</span></li>
+        </ul>
+      </article>
+
+      <article class="special-card">
+        <div class="special-card-icon"><i class="fa-solid fa-crosshairs"></i></div>
+        <h3>CS2</h3>
+        <p>Refleks, clutch ve mikro gerilim. Kisa ama sert kesitler ile oyunculuk becerisini one cikarir.</p>
+        <ul class="special-list">
+          <li><i class="fa-solid fa-check"></i><span>Derleme formatina cok uygun, baslik gucu yuksek.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Topluluk challenge ve rank yolculuklariyla desteklenebilir.</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="special-grid-two">
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">ROADMAP</span>
+          <h2>Sezonluk plan</h2>
+        </div>
+      </div>
+
+      <div class="agenda-list">
+        <div class="agenda-item">
+          <div class="agenda-time">S1</div>
+          <div class="agenda-main">
+            <strong>Minecraft season push</strong>
+            <p>Yeni bolgeler, topluluk challenge ve ana seri final yayini.</p>
+          </div>
+          <span class="agenda-chip">Story Arc</span>
+        </div>
+        <div class="agenda-item">
+          <div class="agenda-time">S2</div>
+          <div class="agenda-main">
+            <strong>FiveM social chaos</strong>
+            <p>Rol anlari ve beklenmeyen sosyal deney bolumleri one cikar.</p>
+          </div>
+          <span class="agenda-chip">Clips</span>
+        </div>
+        <div class="agenda-item">
+          <div class="agenda-time">S3</div>
+          <div class="agenda-main">
+            <strong>CS2 rank sprint</strong>
+            <p>Rank kasma, clutch challenge ve toplulukla duo geceleri planlanir.</p>
+          </div>
+          <span class="agenda-chip">Competitive</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">TOPLULUK ETKISI</span>
+          <h2>Oyun secimini ne buyutuyor</h2>
+        </div>
+      </div>
+
+      <div class="special-grid-two">
+        <article class="special-card">
+          <h3>Canli anketler</h3>
+          <p>Yeni oyun slotlari veya zorluk seviyesi Discord ve yayin anketlerinden seciliyor.</p>
+        </article>
+        <article class="special-card">
+          <h3>Clip tekrar degeri</h3>
+          <p>FiveM ve CS2 sahneleri dikey formatta tekrar tekrar izlenme alma konusunda cok guclu.</p>
+        </article>
+        <article class="special-card">
+          <h3>Server baglantisi</h3>
+          <p>Minecraft sayfasi ile sunucu sayfasi beraber calisarak daha derin bir aidiyet kuruyor.</p>
+        </article>
+        <article class="special-card">
+          <h3>Story-driven seri</h3>
+          <p>Uzun omurlu oyunlar hikaye kurmaya izin verdigi icin buyumeyi daha saglikli hale getiriyor.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">FORMAT ESLESMESI</span>
+        <h2>Oyun ve format bir araya geldiginde</h2>
+      </div>
+      <span class="special-note">Creator matrix</span>
+    </div>
+
+    <div class="lane-grid">
+      <div class="lane-column">
+        <div class="lane-head">
+          <span>Story driven</span>
+          <strong>Minecraft</strong>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Long form</span>
+          <h3>100 gun ve sezonlar</h3>
+          <p>Tek bolum degil, arka arkaya izlenen seri mantigini tasiyor.</p>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Community</span>
+          <h3>Yapilar ve challenge</h3>
+          <p>Topluluk katilimli etkinliklerle genisleyen bir oyun evreni kuruyor.</p>
+        </div>
+      </div>
+
+      <div class="lane-column">
+        <div class="lane-head">
+          <span>Chaos driven</span>
+          <strong>FiveM</strong>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Shorts</span>
+          <h3>Tek sahne vurusu</h3>
+          <p>Ilk saniyede reaksiyon aldiran en guclu kisa format oyun alani.</p>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Live</span>
+          <h3>Roleplay dogaclama</h3>
+          <p>Yayinda aniden dogan anlar sonraki gunun icerik paketine donusuyor.</p>
+        </div>
+      </div>
+
+      <div class="lane-column">
+        <div class="lane-head">
+          <span>Skill driven</span>
+          <strong>CS2</strong>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Montage</span>
+          <h3>Clutch paketleri</h3>
+          <p>Kisa ritimli, tempo yuksek ve tekrar izlemeye uygun yapi.</p>
+        </div>
+        <div class="lane-card">
+          <span class="lane-tag">Challenge</span>
+          <h3>Rank sprint</h3>
+          <p>Topluluk gorevleri ve kendine limit koyan challenge formatlari burada calisir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-owl">OW</span>
+      <span class="logo-text">OWLISBA</span>
+      <p>Her oyun icin ayri deneyim ve ayri seri dili</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="videos.html">Icerik</a>
+        <a href="games.html">Oyunlar</a>
+        <a href="server.html">Sunucu</a>
+        <a href="about.html">Topluluk</a>
+        <a href="magaza.html">Magaza</a>
+      </div>
+      <div class="footer-col">
+        <h4>Takip</h4>
+        <a href="https://kick.com/owlisba" target="_blank">Kick</a>
+        <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank">YouTube</a>
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank">Discord</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hesap</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Kayit</a>
+        <a href="dashboard.html">Panel</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Owlisba. Tum haklari saklidir.</p>
+    <p>Oyun rotasyonu ve seri planlamasi icin hazirlandi.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
