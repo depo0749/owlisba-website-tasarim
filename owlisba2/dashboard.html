@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel - OWLISBA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="dashboard-page">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-owl">OW</span>
+    <span class="logo-text"><a href="dashboard.html">OWLISBA</a></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="dashboard.html">Panel</a></li>
+    <li><a href="videos.html">Icerik</a></li>
+    <li><a href="games.html">Oyunlar</a></li>
+    <li><a href="server.html">Sunucu</a></li>
+    <li><a href="about.html">Topluluk</a></li>
+    <li><a href="magaza.html">Magaza</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="nav-socials">
+      <a href="https://kick.com/owlisba" target="_blank" title="Kick"><i class="fa-solid fa-circle-play"></i></a>
+      <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Sag paneli ac" aria-controls="sidePanel" aria-expanded="false">
+      <span class="sidebar-toggle-grid" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div class="side-panel-backdrop" id="sidePanelBackdrop"></div>
+<aside class="side-panel" id="sidePanel" aria-hidden="true">
+  <div class="side-panel-inner">
+    <div class="stream-focus-card kick-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">OTURUM</span>
+        <span class="stream-focus-chip" data-session-state>DEMO</span>
+      </div>
+      <h3 data-user-name>Demo Kullanici</h3>
+      <p data-user-email>demo@owlisba.net</p>
+      <a href="login.html" class="stream-focus-link">Hesabi Degistir</a>
+    </div>
+
+    <div class="stream-focus-card minecraft-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">AKTIF ODAK</span>
+        <span class="stream-focus-chip">BUGUN</span>
+      </div>
+      <h3>Yayin + Icerik Merkezi</h3>
+      <p>Canli yayin, video planlama, sunucu durumu ve topluluk modullerini tek panelde topla.</p>
+      <div class="stream-focus-meta">
+        <span>5 ana alan</span>
+        <span>Genisleyebilir</span>
+      </div>
+    </div>
+
+    <nav class="side-panel-nav">
+      <a href="dashboard.html"><span>01</span>Panel</a>
+      <a href="videos.html"><span>02</span>Icerik</a>
+      <a href="games.html"><span>03</span>Oyunlar</a>
+      <a href="server.html"><span>04</span>Sunucu</a>
+      <a href="about.html"><span>05</span>Topluluk</a>
+      <a href="magaza.html"><span>06</span>Magaza</a>
+    </nav>
+
+    <div class="auth-panel">
+      <span class="side-panel-kicker">OTURUM AKSIYONLARI</span>
+      <div class="auth-actions">
+        <a href="login.html" class="auth-btn auth-btn-secondary">Login</a>
+        <button type="button" class="auth-btn auth-btn-primary" data-logout-button>Logout</button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<main class="dashboard-main" data-dashboard-root>
+  <section class="dashboard-hero reveal">
+    <div class="dashboard-hero-copy">
+      <span class="section-tag">LOGIN SONRASI ANA SAYFA</span>
+      <h1><span data-user-name>Demo Kullanici</span>, paneline hos geldin.</h1>
+      <p>
+        Burasi giris sonrasi asil deneyim icin hazirlanmis ornek dashboard. Icerik, yayin, topluluk ve sunucu yonetimini
+        tek merkezden kontrol edebilecegin yapida tasarlandi.
+      </p>
+
+      <div class="dashboard-chip-row">
+        <span class="dashboard-chip"><i class="fa-solid fa-bolt"></i> Hizli aksiyon merkezi</span>
+        <span class="dashboard-chip"><i class="fa-solid fa-chart-line"></i> Grafik ve performans alani</span>
+        <span class="dashboard-chip"><i class="fa-solid fa-layer-group"></i> Yeni moduller eklenebilir</span>
+      </div>
+
+      <div class="dashboard-banner">
+        <div>
+          <span class="dashboard-banner-status" data-session-state>Demo onizleme</span>
+          <p data-session-message>Login sonrasinda kullanicinin gorecegi ana panel burada acilir.</p>
+        </div>
+        <div class="dashboard-banner-actions">
+          <a href="videos.html" class="btn btn-secondary">Icerik Akisina Git</a>
+          <a href="server.html" class="btn btn-outline">Sunucu Durumu</a>
+          <button type="button" class="btn btn-primary" data-logout-button>Logout</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-identity-card reveal">
+      <div class="dashboard-identity-top">
+        <div class="dashboard-avatar">OW</div>
+        <div class="dashboard-identity-meta">
+          <strong data-user-name>Demo Kullanici</strong>
+          <span data-user-email>demo@owlisba.net</span>
+        </div>
+      </div>
+
+      <div class="dashboard-identity-grid">
+        <div>
+          <span>Rol</span>
+          <strong>Yonetici</strong>
+        </div>
+        <div>
+          <span>Son giris</span>
+          <strong data-login-time>Az once</strong>
+        </div>
+        <div>
+          <span>Panel tipi</span>
+          <strong>Creator HQ</strong>
+        </div>
+        <div>
+          <span>Durum</span>
+          <strong>Hazir</strong>
+        </div>
+      </div>
+
+      <div class="completion-ring" style="--progress: 76%;">
+        <div class="completion-ring-inner">
+          <strong>76%</strong>
+          <span>Profil tamamlama</span>
+        </div>
+      </div>
+
+      <div class="dashboard-tag-row">
+        <span>Yayin</span>
+        <span>Icerik</span>
+        <span>Topluluk</span>
+        <span>Sunucu</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="overview-grid">
+    <article class="dashboard-card metric-card reveal">
+      <div class="metric-card-head">
+        <div>
+          <span class="metric-label">BUGUN YAYIN</span>
+          <strong class="metric-value">3.4s</strong>
+        </div>
+        <span class="metric-delta up"><i class="fa-solid fa-arrow-trend-up"></i> +18%</span>
+      </div>
+      <p class="metric-note">Haftalik hedefe gore canli yayin suresi duzenli artiyor.</p>
+      <div class="metric-footer">
+        <div class="metric-mini-bars">
+          <span style="--level: 32;"></span>
+          <span style="--level: 48;"></span>
+          <span style="--level: 40;"></span>
+          <span style="--level: 65;"></span>
+          <span style="--level: 82;"></span>
+        </div>
+        <span class="metric-foot-label">Yayin ritmi</span>
+      </div>
+    </article>
+
+    <article class="dashboard-card metric-card reveal">
+      <div class="metric-card-head">
+        <div>
+          <span class="metric-label">TASLAK ICERIK</span>
+          <strong class="metric-value">12</strong>
+        </div>
+        <span class="metric-delta"><i class="fa-solid fa-film"></i> 4 hazir</span>
+      </div>
+      <p class="metric-note">Shorts, uzun video ve klip kuyru gunluk plana uygun dolu.</p>
+      <div class="metric-footer">
+        <div class="metric-mini-bars">
+          <span style="--level: 28;"></span>
+          <span style="--level: 52;"></span>
+          <span style="--level: 75;"></span>
+          <span style="--level: 57;"></span>
+          <span style="--level: 68;"></span>
+        </div>
+        <span class="metric-foot-label">Icerik akisi</span>
+      </div>
+    </article>
+
+    <article class="dashboard-card metric-card reveal">
+      <div class="metric-card-head">
+        <div>
+          <span class="metric-label">TOPLULUK MESAJI</span>
+          <strong class="metric-value">186</strong>
+        </div>
+        <span class="metric-delta warn"><i class="fa-solid fa-bell"></i> 9 cevap bekliyor</span>
+      </div>
+      <p class="metric-note">Discord, yorumlar ve geri bildirim kutusu tek merkezde toplanabilir.</p>
+      <div class="metric-footer">
+        <div class="metric-mini-bars">
+          <span style="--level: 18;"></span>
+          <span style="--level: 22;"></span>
+          <span style="--level: 51;"></span>
+          <span style="--level: 74;"></span>
+          <span style="--level: 61;"></span>
+        </div>
+        <span class="metric-foot-label">Etkilesim hizi</span>
+      </div>
+    </article>
+
+    <article class="dashboard-card metric-card reveal">
+      <div class="metric-card-head">
+        <div>
+          <span class="metric-label">SUNUCU DURUMU</span>
+          <strong class="metric-value">97%</strong>
+        </div>
+        <span class="metric-delta up"><i class="fa-solid fa-server"></i> Stabil</span>
+      </div>
+      <p class="metric-note">Minecraft ve diger servisleri ayni panelden izlemek icin uygun alan hazir.</p>
+      <div class="metric-footer">
+        <div class="metric-mini-bars">
+          <span style="--level: 75;"></span>
+          <span style="--level: 72;"></span>
+          <span style="--level: 86;"></span>
+          <span style="--level: 92;"></span>
+          <span style="--level: 88;"></span>
+        </div>
+        <span class="metric-foot-label">Uptime ornegi</span>
+      </div>
+    </article>
+  </section>
+
+  <section class="dashboard-layout">
+    <div class="dashboard-stack">
+      <article class="dashboard-card chart-card reveal">
+        <div class="dashboard-card-head">
+          <div>
+            <span class="section-tag">PERFORMANS GRAFIGI</span>
+            <h2>Yayin ve video ivmesi</h2>
+          </div>
+          <div class="chart-legend">
+            <span><i class="fa-solid fa-square"></i> Yayin</span>
+            <span class="video"><i class="fa-solid fa-square"></i> Video</span>
+          </div>
+        </div>
+
+        <div class="performance-grid">
+          <div class="chart-shell">
+            <div class="chart-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="chart-bars">
+              <div class="bar-group">
+                <div class="bar-stack">
+                  <span class="chart-bar stream" style="--value: 54%;"></span>
+                  <span class="chart-bar video" style="--value: 38%;"></span>
+                </div>
+                <label>Pzt</label>
+              </div>
+              <div class="bar-group">
+                <div class="bar-stack">
+                  <span class="chart-bar stream" style="--value: 72%;"></span>
+                  <span class="chart-bar video" style="--value: 49%;"></span>
+                </div>
+                <label>Sali</label>
+              </div>
+              <div class="bar-group">
+                <div class="bar-stack">
+                  <span class="chart-bar stream" style="--value: 45%;"></span>
+                  <span class="chart-bar video" style="--value: 61%;"></span>
+                </div>
+                <label>Cars</label>
+              </div>
+              <div class="bar-group">
+                <div class="bar-stack">
+                  <span class="chart-bar stream" style="--value: 84%;"></span>
+                  <span class="chart-bar video" style="--value: 57%;"></span>
+                </div>
+                <label>Pers</label>
+              </div>
+              <div class="bar-group">
+                <div class="bar-stack">
+                  <span class="chart-bar stream" style="--value: 66%;"></span>
+                  <span class="chart-bar video" style="--value: 74%;"></span>
+                </div>
+                <label>Cuma</label>
+              </div>
+              <div class="bar-group">
+                <div class="bar-stack">
+                  <span class="chart-bar stream" style="--value: 78%;"></span>
+                  <span class="chart-bar video" style="--value: 68%;"></span>
+                </div>
+                <label>Cmts</label>
+              </div>
+              <div class="bar-group">
+                <div class="bar-stack">
+                  <span class="chart-bar stream" style="--value: 88%;"></span>
+                  <span class="chart-bar video" style="--value: 76%;"></span>
+                </div>
+                <label>Pzr</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="performance-side">
+            <div class="insight-tile">
+              <span>Toplam izlenme hizi</span>
+              <strong>+42K</strong>
+              <p>Yeni videolar yayin takvimi ile senkron gidince organik erisim daha saglikli artiyor.</p>
+            </div>
+            <div class="insight-tile">
+              <span>En iyi slot</span>
+              <strong>20:30</strong>
+              <p>Canli yayin baslangici ve klip paylasimi ayni saat diliminde yuksek geri donus veriyor.</p>
+            </div>
+            <div class="insight-tile">
+              <span>Eklenebilir alan</span>
+              <strong>Ads / Shop</strong>
+              <p>Bu kutu daha sonra sponsorluk, reklam takibi veya magaza verileri icin ayrilabilir.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dashboard-card reveal">
+        <div class="dashboard-card-head">
+          <div>
+            <span class="section-tag">ICERIK BORU HATTI</span>
+            <h2>Hazirdan yayina giden akisi gor</h2>
+          </div>
+          <a href="videos.html" class="dashboard-inline-link">Tum icerikler</a>
+        </div>
+
+        <div class="pipeline-board">
+          <div class="pipeline-column">
+            <div class="pipeline-head">
+              <span>Hazirlaniyor</span>
+              <strong>04</strong>
+            </div>
+            <div class="pipeline-card">
+              <span class="pipeline-tag">Shorts</span>
+              <h3>FiveM komik anlar paketi</h3>
+              <p>Kapak ve acilis metni bekliyor.</p>
+            </div>
+            <div class="pipeline-card">
+              <span class="pipeline-tag">Live clip</span>
+              <h3>Kick anlik reaksiyon</h3>
+              <p>Kesit secimi tamam, altyazi kaldi.</p>
+            </div>
+          </div>
+
+          <div class="pipeline-column">
+            <div class="pipeline-head">
+              <span>Montaj</span>
+              <strong>03</strong>
+            </div>
+            <div class="pipeline-card">
+              <span class="pipeline-tag">Long form</span>
+              <h3>Minecraft 100. gun finali</h3>
+              <p>Ses dengesi ve thumbnail revizyonu sirada.</p>
+            </div>
+            <div class="pipeline-card">
+              <span class="pipeline-tag">CS2</span>
+              <h3>1v5 clutch derleme</h3>
+              <p>CTA ve final ekranlari eklenecek.</p>
+            </div>
+          </div>
+
+          <div class="pipeline-column">
+            <div class="pipeline-head">
+              <span>Yayin sirasi</span>
+              <strong>05</strong>
+            </div>
+            <div class="pipeline-card highlight">
+              <span class="pipeline-tag">Bu aksam</span>
+              <h3>Sunucu duyurusu + yayin acilisi</h3>
+              <p>Panelin hizli aksiyonlari ile direkt yayinlanabilir.</p>
+            </div>
+            <div class="pipeline-card">
+              <span class="pipeline-tag">Yarin</span>
+              <h3>YouTube topluluk postu</h3>
+              <p>Anket, link ve thumbnail paketleri beklemede.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dashboard-card reveal">
+        <div class="dashboard-card-head">
+          <div>
+            <span class="section-tag">EKLENECEK MODULLER</span>
+            <h2>Sonradan ekleyebilecegin alanlar</h2>
+          </div>
+          <span class="dashboard-inline-note">Bu bolum bilerek bosluk birakir</span>
+        </div>
+
+        <div class="placeholder-grid">
+          <div class="placeholder-tile">
+            <i class="fa-solid fa-shop"></i>
+            <span>MODUL 01</span>
+            <h3>Magaza ve urun kartlari</h3>
+            <p>Merch, urun stoklari, kampanya alanlari veya odeme entegrasyonu icin hazir kutu.</p>
+            <a href="login.html" class="placeholder-link">Sonra ekle</a>
+          </div>
+          <div class="placeholder-tile">
+            <i class="fa-solid fa-ticket"></i>
+            <span>MODUL 02</span>
+            <h3>Destek ve bilet sistemi</h3>
+            <p>Kullanici destek talepleri, oncelik seviyesi ve durum takibi icin ayrildi.</p>
+            <a href="login.html" class="placeholder-link">Akisa bagla</a>
+          </div>
+          <div class="placeholder-tile">
+            <i class="fa-solid fa-credit-card"></i>
+            <span>MODUL 03</span>
+            <h3>Abonelik veya odeme paneli</h3>
+            <p>Premium uyelik, bagis, fatura veya lisans yonetimi gibi alanlar burada toplanabilir.</p>
+            <a href="login.html" class="placeholder-link">Baglanti hazirla</a>
+          </div>
+          <div class="placeholder-tile">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>MODUL 04</span>
+            <h3>Duyuru ve kampanya merkezi</h3>
+            <p>Topluluk postlari, otomatik mesajlar, lansman kutulari ve banner alanlari icin uygun.</p>
+            <a href="login.html" class="placeholder-link">Yapilandir</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="dashboard-stack">
+      <article class="dashboard-card reveal">
+        <div class="dashboard-card-head">
+          <div>
+            <span class="section-tag">HIZLI AKSIYONLAR</span>
+            <h3>Tek tikla yonet</h3>
+          </div>
+        </div>
+
+        <div class="quick-actions">
+          <a href="videos.html" class="quick-action">
+            <i class="fa-solid fa-video"></i>
+            <strong>Yeni video ac</strong>
+            <span>Video karti veya taslak ekle.</span>
+          </a>
+          <a href="https://kick.com/owlisba" target="_blank" class="quick-action">
+            <i class="fa-solid fa-circle-play"></i>
+            <strong>Yayina gec</strong>
+            <span>Canli yayin akisini kontrol et.</span>
+          </a>
+          <a href="server.html" class="quick-action">
+            <i class="fa-solid fa-server"></i>
+            <strong>Sunucu kontrol</strong>
+            <span>IP, uptime ve duzenlemeleri goster.</span>
+          </a>
+          <a href="about.html" class="quick-action">
+            <i class="fa-solid fa-users"></i>
+            <strong>Toplulugu yonet</strong>
+            <span>Geri bildirim ve duyurulari ac.</span>
+          </a>
+          <a href="magaza.html" class="quick-action">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <strong>Magazayi ac</strong>
+            <span>Drop, urun ve destek paketlerini goster.</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="dashboard-card reveal">
+        <div class="dashboard-card-head">
+          <div>
+            <span class="section-tag">GUNLUK PLAN</span>
+            <h3>Takvim akisi</h3>
+          </div>
+        </div>
+
+        <div class="schedule-list">
+          <div class="schedule-item">
+            <div class="schedule-time">14:00</div>
+            <div class="schedule-main">
+              <strong>YouTube kapak kontrolu</strong>
+              <p>Yeni video thumbnail ve baslik testleri.</p>
+            </div>
+            <span class="schedule-tag">Hazirlik</span>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">18:30</div>
+            <div class="schedule-main">
+              <strong>Discord duyurusu</strong>
+              <p>Yayin oncesi topluluk postu ve link paylasimi.</p>
+            </div>
+            <span class="schedule-tag">Topluluk</span>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">20:30</div>
+            <div class="schedule-main">
+              <strong>Canli yayin acilisi</strong>
+              <p>Kick stream baslangici ve klip toplama.</p>
+            </div>
+            <span class="schedule-tag">Canli</span>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">23:15</div>
+            <div class="schedule-main">
+              <strong>Klip secimi</strong>
+              <p>Yayin bitiminde ertesi gun icin kisa video ayikla.</p>
+            </div>
+            <span class="schedule-tag">Arsiv</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dashboard-card reveal">
+        <div class="dashboard-card-head">
+          <div>
+            <span class="section-tag">TOPLULUK AKISI</span>
+            <h3>Son hareketler</h3>
+          </div>
+        </div>
+
+        <div class="activity-feed">
+          <div class="activity-item">
+            <div class="activity-icon"><i class="fa-solid fa-message"></i></div>
+            <div class="activity-text">
+              <strong>Discord geri bildirimi</strong>
+              <p>Hardcore sunucu kurallari icin yeni oneri geldi.</p>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-icon"><i class="fa-solid fa-heart"></i></div>
+            <div class="activity-text">
+              <strong>YouTube yorumlari</strong>
+              <p>Son videodaki seri devam etsin isteyen izleyici sayisi yuksek.</p>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-icon"><i class="fa-solid fa-flag"></i></div>
+            <div class="activity-text">
+              <strong>Moderasyon notu</strong>
+              <p>Yorum filtresi ve otomatik cevap sistemi buraya eklenebilir.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="dashboard-bottom-grid">
+    <article class="dashboard-card reveal">
+      <div class="dashboard-card-head">
+        <div>
+          <span class="section-tag">OPERASYON OZETI</span>
+          <h2>Sunucu ve yayin sagligi</h2>
+        </div>
+      </div>
+
+      <div class="server-status-grid">
+        <div class="status-strip">
+          <span>Minecraft sunucusu</span>
+          <strong>Online</strong>
+        </div>
+        <div class="status-strip">
+          <span>Kick stream hazirligi</span>
+          <strong>Hazir</strong>
+        </div>
+        <div class="status-strip">
+          <span>Yedekleme</span>
+          <strong>02:15</strong>
+        </div>
+        <div class="status-strip">
+          <span>Son deploy</span>
+          <strong>Bugun</strong>
+        </div>
+      </div>
+
+      <div class="server-chip-row">
+        <span class="server-chip">play.owlisba.net</span>
+        <span class="server-chip">1.21.x</span>
+        <span class="server-chip">47 oyuncu</span>
+        <span class="server-chip">Stable</span>
+      </div>
+    </article>
+
+    <article class="dashboard-card reveal">
+      <div class="dashboard-card-head">
+        <div>
+          <span class="section-tag">ENTEGRASYON ALANI</span>
+          <h2>Hazir baglanti kartlari</h2>
+        </div>
+      </div>
+
+      <div class="integrations-grid">
+        <div class="integration-card active">
+          <span class="integration-state">Baglanabilir</span>
+          <h3>Analytics API</h3>
+          <p>Video izlenme, retention ve trafik kaynaklarini cekmek icin uygun kutu.</p>
+        </div>
+        <div class="integration-card">
+          <span class="integration-state">Eklenecek</span>
+          <h3>Discord Bot</h3>
+          <p>Otomatik rol, duyuru ve ticket akisini bu karttan baglayabilirsin.</p>
+        </div>
+        <div class="integration-card">
+          <span class="integration-state">Hazir alan</span>
+          <h3>Odeme sistemi</h3>
+          <p>Bagis, premium uye veya urun satisi icin sonradan acilabilir.</p>
+        </div>
+        <div class="integration-card">
+          <span class="integration-state">Hazir alan</span>
+          <h3>CRM / destek</h3>
+          <p>Kullanici notlari, talepler ve iletisim akisi icin ayrilan kutu.</p>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-owl">OW</span>
+      <span class="logo-text">OWLISBA</span>
+      <p>Login sonrasi ana panel ornegi</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Panel</h4>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="videos.html">Icerik</a>
+        <a href="games.html">Oyunlar</a>
+        <a href="server.html">Sunucu</a>
+        <a href="about.html">Topluluk</a>
+        <a href="magaza.html">Magaza</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hesap</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Kayit</a>
+        <a href="index.html">Tanitim</a>
+      </div>
+      <div class="footer-col">
+        <h4>Topluluk</h4>
+        <a href="https://kick.com/owlisba" target="_blank">Kick</a>
+        <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank">YouTube</a>
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank">Discord</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Owlisba. Tum haklari saklidir.</p>
+    <p>Bu ekran login sonrasi asil deneyim olarak kullanilabilir.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
