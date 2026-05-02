@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - OWLISBA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-owl">OW</span>
+    <span class="logo-text"><a href="index.html">OWLISBA</a></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="videos.html">Icerik</a></li>
+    <li><a href="games.html">Oyunlar</a></li>
+    <li><a href="server.html">Sunucu</a></li>
+    <li><a href="about.html">Topluluk</a></li>
+    <li><a href="magaza.html">Magaza</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="nav-socials">
+      <a href="https://kick.com/owlisba" target="_blank" title="Kick"><i class="fa-solid fa-circle-play"></i></a>
+      <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://tiktok.com/@owlisba" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://instagram.com/owlisba" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Sag paneli ac" aria-controls="sidePanel" aria-expanded="false">
+      <span class="sidebar-toggle-grid" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div class="side-panel-backdrop" id="sidePanelBackdrop"></div>
+<aside class="side-panel" id="sidePanel" aria-hidden="true">
+  <div class="side-panel-inner">
+    <div class="stream-focus-card kick-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">KICK</span>
+        <span class="stream-focus-chip">CANLI</span>
+      </div>
+      <h3>@owlisba</h3>
+      <p>Canli yayinlar ve anlik klipler icin Kick kanalina gec.</p>
+      <a href="https://kick.com/owlisba" target="_blank" class="stream-focus-link">Yayina Git</a>
+    </div>
+
+    <div class="stream-focus-card minecraft-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">MINECRAFT</span>
+        <span class="stream-focus-chip">ONLINE</span>
+      </div>
+      <h3>Hardcore Sunucu</h3>
+      <p>play.owlisba.net ile baglan ve 1.21.x dunyasina katil.</p>
+      <div class="stream-focus-meta">
+        <span>47/100 Oyuncu</span>
+        <span>1.21.x</span>
+      </div>
+    </div>
+
+    <nav class="side-panel-nav">
+      <a href="index.html"><span>01</span>Ana Sayfa</a>
+      <a href="videos.html"><span>02</span>Icerik</a>
+      <a href="games.html"><span>03</span>Oyunlar</a>
+      <a href="server.html"><span>04</span>Sunucu</a>
+      <a href="about.html"><span>05</span>Topluluk</a>
+      <a href="magaza.html"><span>06</span>Magaza</a>
+    </nav>
+
+    <div class="auth-panel">
+      <span class="side-panel-kicker">GIRIS ALANI</span>
+      <div class="auth-actions">
+        <a href="login.html" class="auth-btn auth-btn-primary">Login</a>
+        <a href="register.html" class="auth-btn auth-btn-secondary">Kayit</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <span class="section-tag">HESAP ERISIMI</span>
+    <h1>Hesabina <span class="accent">Login</span></h1>
+    <p>Yayinlar, videolar ve sunucu baglantilari icin hesabina tek ekrandan giris yap.</p>
+  </div>
+</div>
+
+<section class="auth-section">
+  <div class="auth-grid">
+    <div class="auth-showcase">
+      <div class="auth-showcase-card">
+        <span class="section-tag">HIZLI GIRIS</span>
+        <h2>Toplulugu ve icerikleri tek panelden yakala.</h2>
+        <p>Bu login sayfasi front-end olarak hazirlandi. Demo giris sonrasinda kullanici dogrudan yeni dashboard sayfasina yonlendirilir.</p>
+        <div class="auth-showcase-actions">
+          <a href="register.html" class="btn btn-secondary">Kayit Ol</a>
+          <a href="dashboard.html" class="btn btn-outline">Demo Paneli Gor</a>
+        </div>
+      </div>
+
+      <div class="auth-showcase-metrics">
+        <div class="auth-metric">
+          <strong>24/7</strong>
+          <span>Yayin Takibi</span>
+          <p>Yeni yayin ve klipleri tek yerden takip et.</p>
+        </div>
+        <div class="auth-metric">
+          <strong>1.21</strong>
+          <span>Minecraft</span>
+          <p>Hardcore sunucu baglantilarina hizli erisim al.</p>
+        </div>
+        <div class="auth-metric">
+          <strong>5+</strong>
+          <span>Kanal</span>
+          <p>Kick, YouTube, TikTok ve topluluk baglantilari hazir.</p>
+        </div>
+      </div>
+
+      <div class="auth-showcase-list">
+        <div class="auth-showcase-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <strong>Guvenli giris akisi</strong>
+            <p>Arayuz guvenli form akisi icin uygun sekilde hazirlandi ve backend ile genisleyebilir.</p>
+          </div>
+        </div>
+        <div class="auth-showcase-item">
+          <i class="fa-solid fa-bolt"></i>
+          <div>
+            <strong>Hizli yonlendirme</strong>
+            <p>Login sonrasi sunucu, yayin ve video bolumlerine kolay gecis verecek bir iskelet kuruldu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-form-card">
+      <span class="section-tag">LOGIN FORMU</span>
+      <h2>Hesabina giris yap</h2>
+      <p>E-posta ve sifren ile giris yap. Form demo modunda calisir ve basarili giriste seni yeni panel sayfasina tasir.</p>
+
+      <form class="auth-form" data-auth-form data-auth-mode="login">
+        <div class="auth-field">
+          <label for="loginEmail">E-posta</label>
+          <input id="loginEmail" name="email" type="email" placeholder="ornek@owlisba.net" autocomplete="email" required />
+        </div>
+
+        <div class="auth-field">
+          <label for="loginPassword">Sifre</label>
+          <input id="loginPassword" name="password" type="password" placeholder="Sifreni gir" autocomplete="current-password" required />
+        </div>
+
+        <div class="auth-meta-row">
+          <label class="auth-check">
+            <input type="checkbox" name="remember" />
+            <span>Beni hatirla</span>
+          </label>
+          <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" class="auth-inline-link">Destek Al</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary auth-submit">Login</button>
+        <div class="auth-status-box" data-auth-status></div>
+      </form>
+
+      <div class="auth-switch">
+        Hesabin yok mu? <a href="register.html">Kayit sayfasina git</a>
+      </div>
+      <p class="auth-form-note">Not: Demo login sonrasi dashboard sayfasi acilir. Gercek dogrulama icin backend veya API baglantisi gerekir.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-owl">OW</span>
+      <span class="logo-text">OWLISBA</span>
+      <p>FiveM · CS2 · Minecraft · Komedi · Kaos</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="videos.html">Icerik</a>
+        <a href="games.html">Oyunlar</a>
+        <a href="server.html">Sunucu</a>
+        <a href="about.html">Topluluk</a>
+        <a href="magaza.html">Magaza</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hesap</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Kayit</a>
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank">Destek</a>
+      </div>
+      <div class="footer-col">
+        <h4>Sosyal Medya</h4>
+        <a href="https://kick.com/owlisba" target="_blank">Kick</a>
+        <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank">YouTube</a>
+        <a href="https://tiktok.com/@owlisba" target="_blank">TikTok</a>
+        <a href="https://instagram.com/owlisba" target="_blank">Instagram</a>
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank">Discord</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Owlisba. Tum haklari saklidir.</p>
+    <p>Topluluk ve icerik odakli deneyim.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
