@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OWLISBA - Ana Sayfa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-owl">OW</span>
+    <span class="logo-text"><a href="index.html">OWLISBA</a></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Ana Sayfa</a></li>
+    <li><a href="videos.html">Icerik</a></li>
+    <li><a href="games.html">Oyunlar</a></li>
+    <li><a href="server.html">Sunucu</a></li>
+    <li><a href="about.html">Topluluk</a></li>
+    <li><a href="magaza.html">Magaza</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="nav-socials">
+      <a href="https://kick.com/owlisba" target="_blank" title="Kick"><i class="fa-solid fa-circle-play"></i></a>
+      <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://tiktok.com/@owlisba" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://instagram.com/owlisba" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Sag paneli ac" aria-controls="sidePanel" aria-expanded="false">
+      <span class="sidebar-toggle-grid" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="videos.html">Icerik</a>
+  <a href="games.html">Oyunlar</a>
+  <a href="server.html">Sunucu</a>
+  <a href="about.html">Topluluk</a>
+  <a href="magaza.html">Magaza</a>
+  <div class="mobile-socials">
+    <a href="https://kick.com/owlisba" target="_blank"><i class="fa-solid fa-circle-play"></i> Kick</a>
+    <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
+    <a href="https://discord.com/invite/f5wYekYN5y" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+  </div>
+</div>
+
+<div class="side-panel-backdrop" id="sidePanelBackdrop"></div>
+<aside class="side-panel" id="sidePanel" aria-hidden="true">
+  <div class="side-panel-inner">
+    <div class="stream-focus-card kick-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">LIVE</span>
+        <span class="stream-focus-chip">KICK</span>
+      </div>
+      <h3>@owlisba</h3>
+      <p>Canli yayinlar, anlik klipler ve creator enerjisi ayni hatta akiyor.</p>
+      <a href="https://kick.com/owlisba" target="_blank" class="stream-focus-link">Canliya Git</a>
+    </div>
+
+    <div class="stream-focus-card minecraft-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">NEW</span>
+        <span class="stream-focus-chip">MAGAZA</span>
+      </div>
+      <h3>Creator drop</h3>
+      <p>Topluluga ozel urunler ve destek paketleri icin magaza sayfasi hazir.</p>
+      <div class="stream-focus-meta">
+        <span>Urun vitrini</span>
+        <span>Dijital paketler</span>
+      </div>
+    </div>
+
+    <nav class="side-panel-nav">
+      <a href="index.html"><span>01</span>Ana Sayfa</a>
+      <a href="videos.html"><span>02</span>Icerik</a>
+      <a href="games.html"><span>03</span>Oyunlar</a>
+      <a href="server.html"><span>04</span>Sunucu</a>
+      <a href="about.html"><span>05</span>Topluluk</a>
+      <a href="magaza.html"><span>06</span>Magaza</a>
+    </nav>
+
+    <div class="auth-panel">
+      <span class="side-panel-kicker">GIRIS ALANI</span>
+      <div class="auth-actions">
+        <a href="login.html" class="auth-btn auth-btn-primary">Login</a>
+        <a href="register.html" class="auth-btn auth-btn-secondary">Kayit</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">CANLI YAYIN + ICERIK + TOPLULUK</div>
+    <h1 class="hero-title">
+      <span class="title-owl">OWL</span><span class="title-isba">ISBA</span>
+    </h1>
+    <p class="hero-sub">FiveM · CS2 · Minecraft · Creator chaos · Community world</p>
+    <p class="hero-desc">Giris oncesi tanitim alani burada. Icerik, oyunlar, sunucu, topluluk ve magaza artik ayri sayfalarda daha net bir yapida toplandi.</p>
+    <div class="hero-buttons">
+      <a href="videos.html" class="btn btn-primary">Icerik Merkezi</a>
+      <a href="about.html" class="btn btn-secondary">Topluluga Katil</a>
+      <a href="magaza.html" class="btn btn-discord"><i class="fa-solid fa-bag-shopping"></i> Magaza</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Asagi kaydir</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-num" data-target="15000">0</span>
+    <span class="stat-label">YouTube Abone</span>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <span class="stat-num" data-target="8000">0</span>
+    <span class="stat-label">Kick Takipci</span>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <span class="stat-num" data-target="25000">0</span>
+    <span class="stat-label">Kisa Format Erisim</span>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <span class="stat-num" data-target="3500">0</span>
+    <span class="stat-label">Topluluk Uyesi</span>
+  </div>
+</section>
+
+<section class="featured section">
+  <div class="section-header">
+    <span class="section-tag">NE NEREDE</span>
+    <h2>Yeni sayfa yapisi ile <span class="accent">daha net deneyim</span></h2>
+  </div>
+
+  <div class="video-grid">
+    <div class="video-card featured-card">
+      <div class="video-thumb">
+        <div class="thumb-placeholder minecraft-thumb">
+          <span class="game-icon">IC</span>
+          <span class="thumb-label">ICERIK</span>
+        </div>
+      </div>
+      <div class="video-info">
+        <span class="video-game-tag minecraft-tag">Icerik</span>
+        <h3>Yayin, shorts ve seri planlari tek yerde</h3>
+        <p>Icerik sayfasi artik sadece video listesi degil; format, akisi ve cikis planini birlikte gosteren merkez.</p>
+        <div class="video-meta">
+          <span><i class="fa-solid fa-arrow-right"></i> <a href="videos.html">Sayfayi Ac</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-thumb">
+        <div class="thumb-placeholder fivem-thumb">
+          <span class="game-icon">TP</span>
+          <span class="thumb-label">TOPLULUK</span>
+        </div>
+      </div>
+      <div class="video-info">
+        <span class="video-game-tag fivem-tag">Topluluk</span>
+        <h3>Discord, etkinlik ve roller</h3>
+        <div class="video-meta">
+          <span><i class="fa-solid fa-arrow-right"></i> <a href="about.html">Merkezi Ac</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-thumb">
+        <div class="thumb-placeholder cs2-thumb">
+          <span class="game-icon">MG</span>
+          <span class="thumb-label">MAGAZA</span>
+        </div>
+      </div>
+      <div class="video-info">
+        <span class="video-game-tag cs2-tag">Magaza</span>
+        <h3>Drop, urun ve destek paketleri</h3>
+        <div class="video-meta">
+          <span><i class="fa-solid fa-arrow-right"></i> <a href="magaza.html">Magazayi Ac</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">ANA ALANLAR</span>
+    <h2>Bes ana sayfa, bes farkli <span class="accent">amac</span></h2>
+  </div>
+
+  <div class="full-video-grid">
+    <article class="video-card">
+      <div class="video-info">
+        <span class="video-game-tag minecraft-tag">Icerik</span>
+        <h3>Video ve yayin mutfagi</h3>
+        <p>Seri yapisi, shorts dagitimi ve haftalik yayin ritmi burada toplanir.</p>
+      </div>
+    </article>
+    <article class="video-card">
+      <div class="video-info">
+        <span class="video-game-tag fivem-tag">Oyunlar</span>
+        <h3>Her oyun icin ayri evren</h3>
+        <p>Minecraft, FiveM ve CS2 icin farkli enerji ve farkli seri mantigi sunulur.</p>
+      </div>
+    </article>
+    <article class="video-card">
+      <div class="video-info">
+        <span class="video-game-tag cs2-tag">Sunucu</span>
+        <h3>Hardcore komuta merkezi</h3>
+        <p>IP, kurallar, etkinlikler ve katilim yollarini tek yerde gosteren yapidir.</p>
+      </div>
+    </article>
+    <article class="video-card">
+      <div class="video-info">
+        <span class="video-game-tag" style="background:rgba(0,180,255,0.18);color:#8bdcff;border:1px solid rgba(0,180,255,0.28);">Topluluk</span>
+        <h3>Discord ve etkinlik merkezi</h3>
+        <p>Roller, duyurular, topluluk sesi ve aylik ritim topluluk sayfasinda birlesir.</p>
+      </div>
+    </article>
+    <article class="video-card">
+      <div class="video-info">
+        <span class="video-game-tag" style="background:rgba(255,230,0,0.16);color:#ffe775;border:1px solid rgba(255,230,0,0.24);">Magaza</span>
+        <h3>Creator store deneyimi</h3>
+        <p>Merch, VIP destek paketleri ve dijital urunler icin ozel bir vitrin ayrildi.</p>
+      </div>
+    </article>
+    <article class="video-card">
+      <div class="video-info">
+        <span class="video-game-tag" style="background:rgba(255,95,31,0.18);color:#ffb08d;border:1px solid rgba(255,95,31,0.28);">Panel</span>
+        <h3>Login sonrasi asil sayfa</h3>
+        <p>Giris yapildiginda dashboard acilir ve butun bu alanlari yoneten merkez haline gelir.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">TOPLULUK BAGLANTILARI</span>
+    <h2>Bize <span class="accent">katil</span></h2>
+  </div>
+  <div class="socials-grid">
+    <a href="https://kick.com/owlisba" target="_blank" class="social-card kick-card">
+      <i class="fa-solid fa-circle-play"></i>
+      <h3>Kick</h3>
+      <p>Canli yayin ve anlik reaksiyon akisi</p>
+      <span class="follow-btn">Canliya Gec</span>
+    </a>
+    <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" class="social-card youtube-card">
+      <i class="fa-brands fa-youtube"></i>
+      <h3>YouTube</h3>
+      <p>Uzun format seri ve buyuk videolar</p>
+      <span class="follow-btn">Abone Ol</span>
+    </a>
+    <a href="https://tiktok.com/@owlisba" target="_blank" class="social-card tiktok-card">
+      <i class="fa-brands fa-tiktok"></i>
+      <h3>TikTok</h3>
+      <p>Kisa format kaos ve highlightlar</p>
+      <span class="follow-btn">Takip Et</span>
+    </a>
+    <a href="https://instagram.com/owlisba" target="_blank" class="social-card instagram-card">
+      <i class="fa-brands fa-instagram"></i>
+      <h3>Instagram</h3>
+      <p>Drop duyurulari ve creator arka plani</p>
+      <span class="follow-btn">Goz At</span>
+    </a>
+    <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" class="social-card discord-card">
+      <i class="fa-brands fa-discord"></i>
+      <h3>Discord</h3>
+      <p>Topluluk, etkinlikler, sohbet ve challenge oylari</p>
+      <span class="follow-btn">Katil</span>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-owl">OW</span>
+      <span class="logo-text">OWLISBA</span>
+      <p>Giris oncesi tanitim, giris sonrasi panel deneyimi</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="videos.html">Icerik</a>
+        <a href="games.html">Oyunlar</a>
+        <a href="server.html">Sunucu</a>
+        <a href="about.html">Topluluk</a>
+        <a href="magaza.html">Magaza</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hesap</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Kayit</a>
+        <a href="dashboard.html">Panel</a>
+      </div>
+      <div class="footer-col">
+        <h4>Sosyal Medya</h4>
+        <a href="https://kick.com/owlisba" target="_blank">Kick</a>
+        <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank">YouTube</a>
+        <a href="https://tiktok.com/@owlisba" target="_blank">TikTok</a>
+        <a href="https://instagram.com/owlisba" target="_blank">Instagram</a>
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank">Discord</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Owlisba. Tum haklari saklidir.</p>
+    <p>Yeni menu yapisi ve ozel sayfa duzeni ile yenilendi.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
