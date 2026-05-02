@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magaza - OWLISBA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="special-page page-store-hub">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-owl">OW</span>
+    <span class="logo-text"><a href="index.html">OWLISBA</a></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="videos.html">Icerik</a></li>
+    <li><a href="games.html">Oyunlar</a></li>
+    <li><a href="server.html">Sunucu</a></li>
+    <li><a href="about.html">Topluluk</a></li>
+    <li><a href="magaza.html" class="active">Magaza</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="nav-socials">
+      <a href="https://kick.com/owlisba" target="_blank" title="Kick"><i class="fa-solid fa-circle-play"></i></a>
+      <a href="https://www.youtube.com/channel/UC18YkoN4p_8Siqgl8_2wBgA" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://discord.com/invite/f5wYekYN5y" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://instagram.com/owlisba" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Sag paneli ac" aria-controls="sidePanel" aria-expanded="false">
+      <span class="sidebar-toggle-grid" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="videos.html">Icerik</a>
+  <a href="games.html">Oyunlar</a>
+  <a href="server.html">Sunucu</a>
+  <a href="about.html">Topluluk</a>
+  <a href="magaza.html">Magaza</a>
+</div>
+
+<div class="side-panel-backdrop" id="sidePanelBackdrop"></div>
+<aside class="side-panel" id="sidePanel" aria-hidden="true">
+  <div class="side-panel-inner">
+    <div class="stream-focus-card kick-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">DROP</span>
+        <span class="stream-focus-chip">LIMITED</span>
+      </div>
+      <h3>Creator collection</h3>
+      <p>Topluluga ozel urunler, destek paketleri ve dijital ekstralar ayni vitrine toplandi.</p>
+      <a href="about.html" class="stream-focus-link">Toplulugu Ac</a>
+    </div>
+
+    <div class="stream-focus-card minecraft-focus-card">
+      <div class="stream-focus-head">
+        <span class="stream-focus-tag">SERVER</span>
+        <span class="stream-focus-chip">SUPPORT</span>
+      </div>
+      <h3>Destek paketleri</h3>
+      <p>Sunucu, icerik ve creator ekosistemini destekleyen paketler burada listelenir.</p>
+      <div class="stream-focus-meta">
+        <span>Dijital + fiziksel</span>
+        <span>Topluluk odakli</span>
+      </div>
+    </div>
+
+    <nav class="side-panel-nav">
+      <a href="index.html"><span>01</span>Ana Sayfa</a>
+      <a href="videos.html"><span>02</span>Icerik</a>
+      <a href="games.html"><span>03</span>Oyunlar</a>
+      <a href="server.html"><span>04</span>Sunucu</a>
+      <a href="about.html"><span>05</span>Topluluk</a>
+      <a href="magaza.html"><span>06</span>Magaza</a>
+    </nav>
+
+    <div class="auth-panel">
+      <span class="side-panel-kicker">GIRIS ALANI</span>
+      <div class="auth-actions">
+        <a href="login.html" class="auth-btn auth-btn-primary">Login</a>
+        <a href="register.html" class="auth-btn auth-btn-secondary">Kayit</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<main class="special-shell">
+  <section class="special-hero reveal">
+    <div class="special-hero-copy">
+      <span class="section-tag">STORE / DROP</span>
+      <h1>Topluluga ozel urun ve destek <span class="accent-page">alanlari</span>.</h1>
+      <p>
+        Bu sayfa merch vitrini gibi davranir ama sadece urun gostermekle kalmaz; topluluga nasil deger dondugunu,
+        dijital destek paketlerinin ne is yaptigini ve gelecekte nelerin eklenebilecegini de gosterir.
+      </p>
+      <div class="special-chip-row">
+        <span class="special-chip"><i class="fa-solid fa-shirt"></i> Creator wear</span>
+        <span class="special-chip"><i class="fa-solid fa-star"></i> VIP destek</span>
+        <span class="special-chip"><i class="fa-solid fa-box-open"></i> Limited drop</span>
+      </div>
+      <div class="special-actions">
+        <a href="about.html" class="btn btn-primary">Toplulukla Bag Kur</a>
+        <a href="server.html" class="btn btn-secondary">Sunucuyu Destekle</a>
+        <a href="dashboard.html" class="btn btn-outline">Panel</a>
+      </div>
+    </div>
+
+    <aside class="special-panel reveal">
+      <span class="special-kicker">SEZON DROP</span>
+      <h3>Creator support hub</h3>
+      <p>Gelecekte odeme sistemi, kuponlar, dijital teslimat ve stok yonetimi gibi alanlar da bu ekranda toplanabilir.</p>
+      <div class="special-metric-grid">
+        <div class="special-metric">
+          <strong>03</strong>
+          <span>Fiziksel urun veya koleksiyon slotu.</span>
+        </div>
+        <div class="special-metric">
+          <strong>02</strong>
+          <span>Dijital paket ve destek karti.</span>
+        </div>
+        <div class="special-metric">
+          <strong>VIP</strong>
+          <span>Topluluk odakli destek seviyesi.</span>
+        </div>
+        <div class="special-metric">
+          <strong>24H</strong>
+          <span>Drop duyurusu ve acilis pencere ornegi.</span>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">ONE CIKANLAR</span>
+        <h2>Magaza vitrini</h2>
+      </div>
+      <span class="special-note">Showcase layout</span>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="product-art">OWL HOODIE</div>
+        <h3>Creator hoodie</h3>
+        <p>Minimal logolu, yayin odasi tonlarina uygun, toplulugun en kolay sahiplenebilecegi ana urun.</p>
+        <div class="tag-row">
+          <span>Oversize</span>
+          <span>Drop edition</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">899 TL</span>
+          <a href="login.html" class="btn btn-secondary">Detay</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-art">SERVER PASS</div>
+        <h3>VIP destek paketi</h3>
+        <p>Sunucu ve topluluk tarafinda destekci rol, ozel duyuru odalari ve erken bilgi gibi dijital avantajlar icin ayrildi.</p>
+        <div class="tag-row">
+          <span>Dijital</span>
+          <span>Rol paketi</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">249 TL</span>
+          <a href="login.html" class="btn btn-secondary">Detay</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-art">DESK KIT</div>
+        <h3>Sticker ve masa ustu seti</h3>
+        <p>Topluluk odakli mini koleksiyon. Yayin setup hissini fiziksel urune tasimak icin dusunuldu.</p>
+        <div class="tag-row">
+          <span>Bundle</span>
+          <span>Limited</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">329 TL</span>
+          <a href="login.html" class="btn btn-secondary">Detay</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="special-grid-two">
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">DIJITAL PAKETLER</span>
+          <h2>Fiziksel olmayan destek alanlari</h2>
+        </div>
+      </div>
+
+      <div class="special-grid-two">
+        <article class="special-card">
+          <h3>Destekci rolu</h3>
+          <p>Discord uzerinde ayristirilmis rol, erken duyuru ve ozel kanal gibi avantajlar sunabilir.</p>
+        </article>
+        <article class="special-card">
+          <h3>Wallpaper / asset paketi</h3>
+          <p>Creator markasina ait duvar kagidi, banner veya mini dijital koleksiyonlar burada yer alabilir.</p>
+        </article>
+        <article class="special-card">
+          <h3>Event ticket</h3>
+          <p>Topluluk gecesi, ozel oyun etkinligi veya mini turnuvalar icin bilet mantigi sonradan eklenebilir.</p>
+        </article>
+        <article class="special-card">
+          <h3>Gift code sistemi</h3>
+          <p>Kupon, davet kodu veya hediye urun akisi icin ayrilmis dijital checkout katmani olabilir.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="special-section reveal">
+      <div class="special-section-head">
+        <div>
+          <span class="section-tag">SATIN ALMA DENEYIMI</span>
+          <h2>Sonradan eklenebilecek adimlar</h2>
+        </div>
+      </div>
+
+      <div class="lane-grid" style="grid-template-columns:1fr;">
+        <div class="lane-column">
+          <div class="lane-head">
+            <span>Checkout flow</span>
+            <strong>04</strong>
+          </div>
+          <div class="lane-card">
+            <span class="lane-tag">01</span>
+            <h3>Urun secimi</h3>
+            <p>Renk, beden, paket veya dijital urun secenekleriyle ilk adim netlestirilir.</p>
+          </div>
+          <div class="lane-card">
+            <span class="lane-tag">02</span>
+            <h3>Giris ve profil</h3>
+            <p>Login ile adres, rol ve teslimat tercihleri dogrudan kullaniciya baglanir.</p>
+          </div>
+          <div class="lane-card">
+            <span class="lane-tag">03</span>
+            <h3>Odeme ve onay</h3>
+            <p>Odeme gecidi, kupon ve stok kontrolu ayni adimda toplanir.</p>
+          </div>
+          <div class="lane-card">
+            <span class="lane-tag">04</span>
+            <h3>Teslimat ve rol aktivasyonu</h3>
+            <p>Dijital urun aninda, fiziksel urun ise siparis takibi ile kullaniciya baglanir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="special-section reveal">
+    <div class="special-section-head">
+      <div>
+        <span class="section-tag">NOT</span>
+        <h2>Bu sayfa neye hazir</h2>
+      </div>
+    </div>
+
+    <div class="special-grid-three">
+      <div class="special-quote">
+        <p>"Magaza tasarimi creator markasi, destek modeli ve topluluk bagini ayni yerde tutuyor."</p>
+        <span>Brand note</span>
+      </div>
+      <div class="special-quote">
+        <p>"Fiziksel urun olmasa bile dijital paket, VIP destek ve event bileti bu yapiyla rahatca genisler."</p>
+        <span>Commerce note</span>
+      </div>
+      <div class="special-quote">
+        <p>"Backend eklendiginde sepete ekle, kupon, stok ve odeme mantigi dogrudan bu iskelete oturabilir."</p>
+        <span>Implementation note</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-owl">OW</span>
+      <span class="logo-text">OWLISBA</span>
+      <p>Urun vitrini, dijital paketler ve topluluk destek alani</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="videos.html">Icerik</a>
+        <a href="games.html">Oyunlar</a>
+        <a href="server.html">Sunucu</a>
+        <a href="about.html">Topluluk</a>
+        <a href="magaza.html">Magaza</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hesap</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Kayit</a>
+        <a href="dashboard.html">Panel</a>
+      </div>
+      <div class="footer-col">
+        <h4>Baglanti</h4>
+        <a href="about.html">Topluluk Merkezi</a>
+        <a href="server.html">Sunucu</a>
+        <a href="https://discord.com/invite/f5wYekYN5y" target="_blank">Discord</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Owlisba. Tum haklari saklidir.</p>
+    <p>Magaza ve destek ekrani icin ozel hazirlandi.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
